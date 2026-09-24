@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.syscache.pro'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.syscache.pro"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // Shizuku API System
+    implementation 'dev.rikka.shizuku:api:13.1.0'
+    implementation 'dev.rikka.shizuku:provider:13.1.0'
+}
